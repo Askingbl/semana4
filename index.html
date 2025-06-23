@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Sitio Bootstrap</title>
+  <title>Mi Sitio Web Moderno</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Encabezado y Navbar -->
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Mi Sitio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+  <!-- Navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">MiMarca</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse" id="navbarContent">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
           <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
@@ -25,75 +25,92 @@
     </div>
   </nav>
 
-  <!-- Sección Principal -->
-  <div class="container my-5">
-    <h1 class="text-center mb-4">Bienvenidos a mi página moderna</h1>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card">
-          <img src="assets/img/imagen1.jpg" class="card-img-top img-fluid" alt="Imagen 1">
-          <div class="card-body">
-            <h3 class="card-title">Título 1</h3>
-            <p class="card-text">Descripción breve del contenido de esta sección.</p>
+  <!-- Hero Section -->
+  <header class="bg-light text-center py-5">
+    <div class="container">
+      <h1 class="display-4 fw-bold text-primary">Bienvenidos a un sitio moderno y responsivo</h1>
+      <p class="lead">Explora nuestros servicios y contáctanos para más información.</p>
+    </div>
+  </header>
+
+  <!-- Servicios -->
+  <section class="py-5" id="servicios">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <img src="assets/img/imagen1.jpg" class="card-img-top" alt="Servicio 1">
+            <div class="card-body">
+              <h5 class="card-title">Diseño Web</h5>
+              <p class="card-text">Creamos sitios atractivos, modernos y funcionales para todos los dispositivos.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img src="assets/img/imagen1.jpg" class="card-img-top img-fluid" alt="Imagen 2">
-          <div class="card-body">
-            <h3 class="card-title">Título 2</h3>
-            <p class="card-text">Otro contenido interesante para los visitantes.</p>
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <img src="assets/img/imagen1.jpg" class="card-img-top" alt="Servicio 2">
+            <div class="card-body">
+              <h5 class="card-title">Optimización SEO</h5>
+              <p class="card-text">Mejora tu visibilidad en buscadores y llega a más clientes.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img src="assets/img/imagen1.jpg" class="card-img-top img-fluid" alt="Imagen 3">
-          <div class="card-body">
-            <h3 class="card-title">Título 3</h3>
-            <p class="card-text">Más información sobre nuestros servicios.</p>
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <img src="assets/img/imagen1.jpg" class="card-img-top" alt="Servicio 3">
+            <div class="card-body">
+              <h5 class="card-title">Marketing Digital</h5>
+              <p class="card-text">Estrategias innovadoras para potenciar tu marca en línea.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Formulario de contacto -->
-  <div class="container my-5" id="contacto">
-    <h2 class="text-center mb-4">Contáctanos</h2>
-    <form>
-      <div class="mb-3">
-        <label for="nombre" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="nombre">
-      </div>
-      <div class="mb-3">
-        <label for="email" class="form-label">Correo electrónico</label>
-        <input type="email" class="form-control" id="email">
-      </div>
-      <div class="mb-3">
-        <label for="comentarios" class="form-label">Comentarios</label>
-        <textarea class="form-control" id="comentarios" rows="3"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
-  </div>
+  <section class="bg-light py-5" id="contacto">
+    <div class="container">
+      <h2 class="text-center mb-4 text-primary">Contáctanos</h2>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com">
+        </div>
+        <div class="col-12">
+          <label for="comentarios" class="form-label">Comentarios</label>
+          <textarea class="form-control" id="comentarios" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-primary px-5">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </section>
 
-  <!-- Collapse animado -->
-  <div class="container text-center my-5">
-    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#infoExtra">
+  <!-- Sección colapsable -->
+  <section class="container py-5 text-center">
+    <h3 class="mb-3">¿Deseas saber más?</h3>
+    <button class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#infoExtra">
       Mostrar información adicional
     </button>
     <div class="collapse mt-3" id="infoExtra">
-      <div class="card card-body">
-        Aquí puedes agregar contenido extra que se muestra con transición animada.
+      <div class="card card-body shadow">
+        Aquí puedes añadir información relevante como promociones, eventos u otros detalles importantes para el visitante.
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Pie de página -->
-  <footer class="bg-light text-center py-3">
-    <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados. | <a href="#">Política de Privacidad</a></p>
+  <!-- Footer -->
+  <footer class="bg-dark text-light text-center py-4">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 MiMarca. Todos los derechos reservados.</p>
+      <a href="#" class="text-light text-decoration-underline">Política de Privacidad</a>
+    </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
